@@ -19,7 +19,7 @@ then
   # Install ECR credential helper
   sudo apt update
   sudo apt install amazon-ecr-credential-helper -y
-  jq '.credHelpers."159104148769.dkr.ecr.us-west-2.amazonaws.com" = "ecr-login" | .credHelpers."public.ecr.aws" = "ecr-login"' ~/.docker/config.json | sponge ~/.docker/config.json
+  jq '.credHelpers."159104148769.dkr.ecr.us-west-2.amazonaws.com" = "ecr-login" | .credHelpers."828371303976.dkr.ecr.us-west-2.amazonaws.com" = "ecr-login" | .credHelpers."public.ecr.aws" = "ecr-login"' ~/.docker/config.json | sponge ~/.docker/config.json
 fi
 
 
